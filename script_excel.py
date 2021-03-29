@@ -1,5 +1,6 @@
 # Program to send bulk customized message through WhatsApp web application
 # Author @inforkgodara
+# Modifier @Aezo27
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -8,6 +9,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import NoSuchElementException
 import pandas
 import time
+import requests
 
 # Load the chrome driver
 driver = webdriver.Chrome()
@@ -16,6 +18,10 @@ count = 0
 # Open WhatsApp URL in chrome browser
 driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver, 20)
+
+# Get ada from the api
+response = requests.get('http://127.0.0.1:8000/api/whatsapp')
+json = response.json()
 
 # Read data from excel
 excel_data = pandas.read_excel('Customer bulk email data.xlsx', sheet_name='Customers', engine='openpyxl')

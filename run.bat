@@ -1,2 +1,3 @@
-python script.py
-pause
+start "" chromedriver.exe
+
+python script_api.py

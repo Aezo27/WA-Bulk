@@ -1,3 +1,3 @@
-start "" chromedriver.exe
+@REM start "" chromedriver.exe
 
-python script_api.py
+pythonw script_api.py

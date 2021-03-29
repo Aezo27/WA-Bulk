@@ -67,7 +67,7 @@ while True:
                                 data={'id': data['id'], 'stts': '1'})
                     print(time.time())
     
-    time.sleep(20.0 - ((time.time() - starttime) % 20.0))
+    time.sleep(1800.0 - ((time.time() - starttime) % 1800.0))
 
 # Close chrome browser
 # driver.quit()

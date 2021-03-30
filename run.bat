@@ -1,8 +1,8 @@
 @REM start "" chromedriver.exe
 
-@REM install modul
-pip install pipreqs
-pipreqs .
-pip install - r requirements.txt
+@REM @REM install modul
+@REM pip install pipreqs
+@REM pipreqs .
+@REM pip install - r requirements.txt
 
 pythonw script_api.py

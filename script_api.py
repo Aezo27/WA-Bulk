@@ -37,6 +37,7 @@ while True:
                 pesan = "Halo {nama}, sorry bre mung test apliasi auto wa python."
 
                 # Locate search box through x_path
+                # Inspect element bagian pencarian (sidebar)
                 search_box = '//*[@id="side"]/div[1]/div/label/div/div[2]'
                 person_title = wait.until(
                     lambda driver: driver.find_element_by_xpath(search_box))
@@ -52,6 +53,7 @@ while True:
 
                 try:
                     # Load error message in case unavailability of contact number
+                    # Inspect elemen bagian hasil pencarian
                     element = driver.find_element_by_xpath(
                         '//*[@id="pane-side"]/div[1]/div/span')
                     print('nomor tida ada')

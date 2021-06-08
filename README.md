@@ -11,7 +11,7 @@ In order to run the python script, your system must have the following programs/
 * Pandas : Run in command prompt **pip install pandas**
 * Xlrd : Run in command prompt **pip install xlrd**
 * Selenium: Run in command prompt **pip install selenium** 
-* Openpyxl: Run in command prompt **pip install openpyxl**
+* Openpyxl: Run in command prompt **pip install openpyxl** (for import data from excel)
 * Request: Run in command prompt **pip install requests**
 
 ## Approach
